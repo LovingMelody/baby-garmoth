@@ -1,0 +1,21 @@
+{
+  "name": "baby-garmoth",
+  "version": "0.1.0",
+  "description": "Unofficial Garmoth client",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/fuzen-py/baby-garmoth",
+  "keywords": [
+    "Electron",
+    "Garmoth",
+    "BlackDesert",
+    "web-wrapper"
+  ],
+  "author": "Fuzen-py",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.1.1"
+  }
+}
