@@ -54,24 +54,9 @@ function createWindow() {
     label: "Tools",
     submenu: []
   }));
-  
+
 
   mainWindow.setMenu(menu);
-
-  // Check if dashboard exists on the page, only appears if user has logged in
-  // This is a hacky method to check, for now it will do
-  mainWindow.webContents.once('did-finish-load', () => {
-    url = mainWindow.webContents.getURL();
-    if (url !== "https://garmoth.com/") return;
-    mainWindow.webContents.on('found-in-page', (_evnt, res) => {
-      // User has logged in, take them to the dashboard
-      // since garmoth.com doesnt auto redirect
-      if (res.matches >= 1) mainWindow.loadURL("https://garmoth.com/dashboard");
-    });
-
-    mainWindow.webContents.findInPage("Dashboard");
-
-  })
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
