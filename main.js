@@ -48,11 +48,76 @@ function createWindow() {
   }));
   menu.append(new MenuItem({
     label: "Enhancing",
-    submenu: []
+    submenu: [
+      {
+        role: "Enhancing Calculator",
+        label: "Enhance Calculator",
+        accelerator: `${ctrl}+E`,
+        click: () => { mainWindow.loadURL("https://garmoth.com/enhancing-calculator") }
+      },
+      {
+        role: "Caphras Calculator",
+        label: "Caphras Calculator",
+        click: () => { mainWindow.loadURL("https://garmoth.com/caphras-calculator") }
+      },
+      {
+        role: "Cron Stone Cost",
+        label: "Cron Stone Cost",
+        click: () => { mainWindow.loadURL("https://garmoth.com/cron-stone-cost") }
+      },
+    ]
   }));
   menu.append(new MenuItem({
     label: "Tools",
-    submenu: []
+    submenu: [
+      {
+        role: "PvE hitrate Calculaotr",
+        label: "PvE hitrate Calculator",
+        click: () => { mainWindow.loadURL("https://garmoth.com/pve-hitrate-calculator") }
+      },
+      {
+        role: "PvP hitrate Calculaotr",
+        label: "PvP hitrate Calculator",
+        click: () => { mainWindow.loadURL("https://garmoth.com/pvp-hitrate-calculator") }
+      },
+      {
+        role: "AP & DP Brackets",
+        label: "AP & DP Brackets",
+        click: () => { mainWindow.loadURL("https://garmoth.com/ap-dp-brackets") }
+      },
+  ]
+  }));
+  menu.append(new MenuItem({
+    label: "Grind Tracker",
+    
+    submenu: [
+      {
+        role: "Grind Tracker",
+        label: "Grind Tracker",
+        click: () => { mainWindow.loadURL("https://garmoth.com/grind-tracker/summary") }
+      },
+      {
+        role: "Grind Timers",
+        label: "Grind Timers",
+        click: () => { mainWindow.loadURL("https://garmoth.com/grind-tracker/timers") }
+      }
+    ]
+  }));
+  menu.append(new MenuItem({
+    label: "Gear Builder",
+    submenu: [
+      {
+        role: "Gear Builder",
+        label: "Gear Builder",
+        click: () => { mainWindow.loadURL("https://garmoth.com/gear-builder") }
+      },
+      {
+        role: "BDO Planner",
+        label: "BDO Planner",
+        click: () => { mainWindow.loadURL("https://bdoplanner.com/") }
+
+      }
+    ]
   }));
 
 
