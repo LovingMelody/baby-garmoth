@@ -16,6 +16,6 @@
   "author": "Fuzen-py",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^15.1.2"
+    "electron": "^18.0.0"
   }
 }
